@@ -66,6 +66,7 @@ func (c *Component) FindMatch(test *v1.TestInfo) *ComponentMatcher {
 		if strings.EqualFold(unquoted, c.DefaultJiraComponent) {
 			return &ComponentMatcher{
 				JiraComponent: c.DefaultJiraComponent,
+				Priority:      1,
 			}
 		}
 	}
